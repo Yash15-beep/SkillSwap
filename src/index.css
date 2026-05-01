@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #0f172a; /* Slate 900 */
+    --foreground: #f8fafc; /* Slate 50 */
+    --card: #1e293b; /* Slate 800 */
+    --card-foreground: #f8fafc;
+    --primary: #3b82f6; /* Blue 500 */
+    --primary-foreground: #ffffff;
+    --secondary: #334155; /* Slate 700 */
+    --secondary-foreground: #f8fafc;
+    --accent: #8b5cf6; /* Violet 500 */
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444; /* Red 500 */
+    --destructive-foreground: #ffffff;
+    --border: #334155;
+    --input: #1e293b;
+    --ring: #3b82f6;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[var(--border)];
+  }
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased min-h-screen font-sans;
+  }
+}
+
