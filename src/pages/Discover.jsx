@@ -48,14 +48,16 @@ export default function Discover() {
             />
           </div>
           <div className="relative md:w-64">
-            <Filter className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
+            <Filter className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none z-10" size={20} />
             <select 
-              className="w-full bg-card border border-border rounded-xl py-3 pl-10 pr-4 focus:outline-none focus:border-primary transition-colors appearance-none"
+              className="w-full bg-[#1e293b] text-slate-100 border border-border rounded-xl py-3 pl-10 pr-4 focus:outline-none focus:border-primary transition-colors appearance-none cursor-pointer"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
               {CATEGORIES.map(c => (
-                <option key={c} value={c}>{c === 'All' ? 'All Categories' : c}</option>
+                <option key={c} value={c} className="bg-[#1e293b] text-slate-100">
+                  {c === 'All' ? 'All Categories' : c}
+                </option>
               ))}
             </select>
           </div>

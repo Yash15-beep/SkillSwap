@@ -12,9 +12,9 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <div className="min-h-screen flex flex-col pt-16">
+        <div className="min-h-screen flex flex-col">
           <NavBar />
-          <main className="flex-grow">
+          <main className="flex-grow pt-16">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/discover" element={<Discover />} />

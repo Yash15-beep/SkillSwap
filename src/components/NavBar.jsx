@@ -12,7 +12,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full h-16 bg-card border-b border-border z-50 px-6 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 h-16 bg-[#1e293b] border-b border-[#334155] z-50 px-6 flex items-center justify-between" style={{backdropFilter: 'none'}}>
       <Link to="/" className="flex items-center gap-2 group">
         <div className="bg-primary text-primary-foreground p-1.5 rounded-lg group-hover:bg-accent transition-colors">
           <BookOpen size={24} />
